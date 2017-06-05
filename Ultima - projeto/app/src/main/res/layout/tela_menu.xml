@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/santuario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:text="SCORE: "
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:text="00000"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="141dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                   />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="ESCOLHA SEU PERSONAGEM"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:textSize="20sp"
+                android:background="@drawable/btcinza"/>
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btn_anterior"
+                    android:layout_width="40dp"
+                    android:layout_height="135dp"
+                    android:background="@drawable/seta2"/>
+                <ViewFlipper
+                    android:id="@+id/vf_personagem1"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:background="@drawable/btcinza"
+                        android:gravity="center"
+                        android:layout_width="265dp"
+                        android:layout_height="139dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="114dp"
+                            android:layout_height="107dp"
+                            android:src="@drawable/j1"/>
+                        <Button
+                            android:id="@+id/btn_selecionar1"
+                            android:text="SELECIONAR"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:textColor="#fff"
+                            android:background="@drawable/btvermel"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@drawable/btcinza"
+                        android:gravity="center"
+                        android:layout_width="265dp"
+                        android:layout_height="139dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="114dp"
+                            android:layout_height="107dp"
+                            android:src="@drawable/j2"/>
+                        <Button
+                            android:id="@+id/btn_selecionar2"
+                            android:text="SELECIONAR"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:textColor="#fff"
+                            android:background="@drawable/btvermel"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@drawable/btcinza"
+                        android:gravity="center"
+                        android:layout_width="265dp"
+                        android:layout_height="139dp"
+                        android:weightSum="1">
+                        <ImageView
+                            android:layout_width="114dp"
+                            android:layout_height="107dp"
+                            android:src="@drawable/j3"/>
+                        <Button
+                            android:id="@+id/btn_selecionar3"
+                            android:text="SELECIONAR"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:textColor="#fff"
+                            android:background="@drawable/btvermel"/>
+                    </LinearLayout>
+
+                </ViewFlipper>
+                <Button
+                    android:id="@+id/btn_proximo"
+                    android:layout_width="40dp"
+                    android:layout_height="135dp"
+                    android:background="@drawable/seta"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

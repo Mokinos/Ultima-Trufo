@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@drawable/santuario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:text="MANA:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <TextView
+            android:textStyle="bold"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:id="@+id/tv_energia" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/j1"
+        android:layout_width="222dp"
+        android:layout_height="131dp"
+        android:id="@+id/poke" />
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:background="@drawable/btcinza">
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_golpe1"
+            android:layout_marginTop="10dp"
+            android:layout_width="173dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btverde"
+            android:text="Ataque fraco"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_golpe1"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Força do golpe: 20            Custo do golpe:30"
+            android:textColor="#041009" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/btcinza">
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_golpe2"
+            android:layout_width="173dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btverde"
+            android:text="Ataque médio"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_golpe2"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Força do golpe: 50            Custo do golpe:50"
+            android:textColor="#041009" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:background="@drawable/btcinza">
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_golpe3"
+            android:layout_marginTop="10dp"
+            android:layout_width="173dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btverde"
+            android:text="Ataque forte"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_golpe3"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:paddingLeft="5dp"
+            android:textColor="#041009"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Força do golpe: 80            Custo do golpe:70" />
+
+    </LinearLayout>
+
+</LinearLayout>
